@@ -20,36 +20,43 @@ class MyApp extends StatelessWidget {
             //mainAxisSize: MainAxisSize.min,
             //verticalDirection: VerticalDirection.up,
             //mainAxisAlignment: MainAxisAlignment.center,
-            //mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             //crossAxisAlignment: CrossAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                height: 100.0,
-                width: 100.0,//doesn't work in row with strerch
+                width: 100.0, //doesn't work in row with strerch
                 //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
                 //padding: EdgeInsets.all(10.0),
-                color: Colors.white,
+                color: Colors.red,
                 child: Text('Ben'),
               ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+                    //padding: EdgeInsets.all(10.0),
+                    color: Colors.yellow,
+                    child: Text('Erkmen'),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+                    //padding: EdgeInsets.all(10.0),
+                    color: Colors.yellow[100],
+                    child: Text('Erkmen'),
+                  ),
+                ],
+              ),
               Container(
-                height: 100.0,
                 width: 100.0,
                 //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
                 //padding: EdgeInsets.all(10.0),
                 color: Colors.blue,
-                child: Text('Emre'),
-              ),
-              SizedBox(
-                //height: 20.0,
-                width: 30.0,
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
-                //padding: EdgeInsets.all(10.0),
-                color: Colors.red,
                 child: Text('Erkmen'),
               ),
             ],
