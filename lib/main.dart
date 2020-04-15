@@ -16,13 +16,43 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            height: 100.0,
-            width: 100.0,
-            margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
-            padding: EdgeInsets.all(10.0),
-            color: Colors.white,
-            child: Text('Hello'),
+          child: Row(
+            //mainAxisSize: MainAxisSize.min,
+            //verticalDirection: VerticalDirection.up,
+            //mainAxisAlignment: MainAxisAlignment.center,
+            //mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                width: 100.0,//doesn't work in row with strerch
+                //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+                //padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                child: Text('Ben'),
+              ),
+              Container(
+                height: 100.0,
+                width: 100.0,
+                //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+                //padding: EdgeInsets.all(10.0),
+                color: Colors.blue,
+                child: Text('Emre'),
+              ),
+              SizedBox(
+                //height: 20.0,
+                width: 30.0,
+              ),
+              Container(
+                height: 100.0,
+                width: 100.0,
+                //margin: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+                //padding: EdgeInsets.all(10.0),
+                color: Colors.red,
+                child: Text('Erkmen'),
+              ),
+            ],
           ),
         ),
       ),
