@@ -38,62 +38,55 @@ class MyApp extends StatelessWidget {
                   'SOFTWARE ENGINEER',
                   style: TextStyle(
                     fontFamily: 'Chewy',
-                    color: Colors.blue.shade800,
+                    color: Colors.blue.shade50,
                     fontSize: 30.0,
                     //fontWeight: FontWeight.bold,
                     letterSpacing: 2.5,
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  margin:
-                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        //size: 100.0,
-                        color: Colors.blue.shade900,
-                      ),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        '+90 534 392 07 15',
-                        style: TextStyle(
-                          fontFamily: 'Chewy',
-                          fontSize: 20.0,
-                          color: Colors.blue.shade900,
-                        ),
-                      )
-                    ],
+                SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.blue.shade900,
                   ),
                 ),
-                Container(
+                Card(
                   color: Colors.white,
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        //size: 100.0,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.blue.shade900,
+                    ),
+                    title: Text(
+                      '+90 534 192 07 15',
+                      style: TextStyle(
+                        //fontFamily: 'Chewy',
+                        fontSize: 20.0,
                         color: Colors.blue.shade900,
                       ),
-                      SizedBox(
-                        width: 10.0,
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.blue.shade900,
+                    ),
+                    title: Text(
+                      'emre.erkmen@hotmail.com',
+                      style: TextStyle(
+                        //fontFamily: 'Chewy',
+                        fontSize: 20.0,
+                        color: Colors.blue.shade900,
                       ),
-                      Text(
-                        'emre.erkmen@hotmail.com',
-                        style: TextStyle(
-                          fontFamily: 'Chewy',
-                          fontSize: 20.0,
-                          color: Colors.blue.shade900,
-                        ),
-                      )
-                    ],
+                    ),
                   ),
                 ),
               ],
